@@ -1,3 +1,6 @@
+CREATE VIEW vwSalesReason 
+AS
+
 SELECT 
     --fs.SalesOrderNumber AS InvoiceNumber,
     --fs.SalesOrderLineNumber AS InvoiceLineNumber,
@@ -12,3 +15,5 @@ FROM FactInternetSales AS fs
 --WHERE fs.SalesOrderNumber = N'SO51178'
 
 GROUP BY dsr.SalesReasonReasonType
+
+GO 
